@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"nftInterface.sol": "_nft"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"nftInterface.sol": {
+			"keccak256": "0x32276e1bb01cf7d5370eeb7bdde74d5bf4c16fd7ab4703e72b9c5257d306d065",
+			"urls": [
+				"bzz-raw://8bb0f5d1ff2d261425ed5a5b04b6cc4c60e3a56edbaeab028369854153956bc8",
+				"dweb:/ipfs/QmS1ZNeSKRv5vJHVN8yprzF6xM7vgMqhzkaNpYht6ZL5R8"
+			]
+		}
+	},
+	"version": 1
+}
