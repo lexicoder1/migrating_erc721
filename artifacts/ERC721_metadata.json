@@ -756,6 +756,32 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setcurrentmintnumberforancient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setcurrentmintnumberforbabynft",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "_newmaxMintAmount",
 						"type": "uint256"
 					}
@@ -1178,11 +1204,11 @@
 			]
 		},
 		"nft.sol": {
-			"keccak256": "0x16febdcb72e45669170b3877094cd757b2f34625a6f55a69474df2ce647498f5",
+			"keccak256": "0xa4b028511ebf800785e6d5f60cb53026f40bca4333d92d9ce46c4ce9a35c5046",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e01096fdd25c4e64d9bb06e0b0e4d3e76d5be5618ef11b888ce3190bf8702ee0",
-				"dweb:/ipfs/QmZ4Cjwbfa6P7yKJH2WXwfqbzp5hz8CRjzSj2xJUZLdgbL"
+				"bzz-raw://c69ffc25c194699ce2e8211cd897fe9d0a76aee171f7824a1fb99a5b23235ecb",
+				"dweb:/ipfs/QmXarkLr9US3wNRyUzc4DAydyciiwAoXPcUEureYNHSNSY"
 			]
 		},
 		"nftInterface.sol": {

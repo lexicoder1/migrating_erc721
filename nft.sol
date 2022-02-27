@@ -568,8 +568,17 @@ _transfer(
    }
 
    
+   function setcurrentmintnumberforbabynft(uint amount) public onlyOwner{
+       _babynft.setcurrentmintedamount(amount );   
+   }
+
+   
    function setbaseuriforancientnft(string memory _newBaseURI) public onlyOwner{
        _ancientnft.setBaseURI(_newBaseURI);
+   }
+
+    function setcurrentmintnumberforancient(uint amount) public onlyOwner{
+        _ancientnft.setcurrentmintedamount(amount ); 
    }
 
 
