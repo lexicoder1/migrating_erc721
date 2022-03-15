@@ -51,6 +51,7 @@
 		"methodIdentifiers": {
 			"approve(address,uint256)": "095ea7b3",
 			"balanceOf(address)": "70a08231",
+			"checkdragonnotbreeded(address)": "f6368b83",
 			"checkrewardbal()": "4e157569",
 			"checkrewardbal(address)": "2b875c94",
 			"getApproved(uint256)": "081812fc",
@@ -172,6 +173,25 @@
 					"internalType": "uint256",
 					"name": "balance",
 					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "add",
+					"type": "address"
+				}
+			],
+			"name": "checkdragonnotbreeded",
+			"outputs": [
+				{
+					"internalType": "uint256[]",
+					"name": "",
+					"type": "uint256[]"
 				}
 			],
 			"stateMutability": "view",

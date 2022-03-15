@@ -1,11 +1,14 @@
+// SPDX-License-Identifier: MIT
+// OpenZeppelin Contracts v4.4.0 (token/ERC721/IERC721.sol)
+
 pragma solidity ^0.8.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol"; 
+import "../../utils/introspection/IERC165.sol";
 
 /**
  * @dev Required interface of an ERC721 compliant contract.
  */
-interface _IERC721 is IERC165 {
+interface IERC721 is IERC165 {
     /**
      * @dev Emitted when `tokenId` token is transferred from `from` to `to`.
      */
@@ -118,18 +121,23 @@ interface _IERC721 is IERC165 {
      */
     function isApprovedForAll(address owner, address operator) external view returns (bool);
 
-  function walletofNFT(address _owner)external view returns (uint256[] memory);
-
-   function checkrewardbal(address add)external view returns(uint);
-    function checkrewardbal()external view returns(uint);
-
+    /**
+     * @dev Safely transfers `tokenId` token from `from` to `to`.
+     *
+     * Requirements:
+     *
+     * - `from` cannot be the zero address.
+     * - `to` cannot be the zero address.
+     * - `tokenId` token must exist and be owned by `from`.
+     * - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.
+     * - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.
+     *
+     * Emits a {Transfer} event.
+     */
     function safeTransferFrom(
         address from,
         address to,
         uint256 tokenId,
         bytes calldata data
     ) external;
-
-     function checkdragonnotbreeded(address add)external view returns(uint[] memory);
 }
- 

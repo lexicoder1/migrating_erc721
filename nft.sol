@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/ERC721.sol)
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.0; 
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721Receiver.sol";
@@ -23,7 +23,7 @@ import "./erc20interface.sol";
 contract ERC721  is Context, ERC165, IERC721, IERC721Metadata, Ownable, IERC721Enumerable {
     using Address for address;
     using Strings for uint256;
-    using Counters for Counters.Counter;
+    using Counters for Counters.Counter; 
 
     
    
@@ -698,12 +698,20 @@ _transfer(
     
 
     function migrate()public   {
-          uint[] memory _tokenId= mainERC721.walletofNFT(msg.sender);   
+          uint[] memory _tokenId= mainERC721.walletofNFT(msg.sender);
+        //   uint[] memory notbreeded= mainERC721.checkdragonnotbreeded(msg.sender);  
           for (uint i ;i< _tokenId.length;i++){
               require(msg.sender==mainERC721.ownerOf(_tokenId[i]));
-              mainERC721.transferFrom(msg.sender,0x000000000000000000000000000000000000dEaD,_tokenId[i]);
-              _mint(msg.sender,_tokenId[i] ); 
+
+            mainERC721.transferFrom(msg.sender,0x000000000000000000000000000000000000dEaD,_tokenId[i]);  
+            _mint(msg.sender,_tokenId[i] );
+            //    _breeded[address(this)][i]=true; 
+            //   for(uint j;j<notbreeded.length;j++){ 
+            //       if(_tokenId[i]== notbreeded[j]){
+            //         _breeded[address(this)][i]=false; 
+            //       }    
           } 
+          
            uint[] memory _tokenId1=  ancientERC721.walletofNFT(msg.sender);   
           for (uint i ;i< _tokenId1.length;i++){
               require(msg.sender== ancientERC721.ownerOf(_tokenId1[i]));

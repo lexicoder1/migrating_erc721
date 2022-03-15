@@ -125,6 +125,25 @@
 						"type": "address"
 					}
 				],
+				"name": "checkdragonnotbreeded",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "add",
+						"type": "address"
+					}
+				],
 				"name": "checkrewardbal",
 				"outputs": [
 					{
@@ -403,7 +422,7 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
@@ -418,10 +437,10 @@
 			]
 		},
 		"nftInterface.sol": {
-			"keccak256": "0xa35f7ca638981399953321160843e5ceb022cceb900392683508b90b2493e993",
+			"keccak256": "0x27f55b96dd618435ef003ecd2ed785bfb7f51c9903c82a2f0d361fb78f23041e",
 			"urls": [
-				"bzz-raw://53dd1db7094709f1c7cdc7f26deee25a00163c7ce2ebea05e772e9fbed79fa82",
-				"dweb:/ipfs/QmcySsDNXnmvU64AypDzo6yELm8CswKuC458NYPrQK25MY"
+				"bzz-raw://c4779fdeee177e5965b0d63d8de94d2391f523b7c23b92e89f5ce8532232657b",
+				"dweb:/ipfs/QmR571w6GwzCqg7WvBJg183Y7LFDLBMrssU6SRYwKCCPow"
 			]
 		}
 	},
